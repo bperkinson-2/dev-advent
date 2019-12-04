@@ -38,7 +38,7 @@ require "benchmark"
   def self.big_fake_array
     arr = []
     10000000.times do |a|
-      arr << rand(9999)
+      arr << rand(-9999..9999)
     end
     arr << 10000
     arr << 99999
